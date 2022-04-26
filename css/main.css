@@ -1,6 +1,8 @@
 :root {
     --text-color: #6E8098;
-    --body-bg-color: #f4f6f8;   
+    --body-bg-color: #f4f6f8;  
+    --header-bg-color: #5964E0; 
+    --color-white: #fff;
 }
 
 /* FONTS */
@@ -35,8 +37,16 @@ html {
 }
 
 *:focus {
-    outline: 3px dashed var(--text-color);
-    outline-offset: 3px;
+    outline: 3px dashed var(--header-bg-color);
+    outline-offset: 2px;
+}
+
+.logo-link:focus {
+    outline: 3px dashed var(--color-white);
+}
+
+.search:focus {
+    outline: 3px dashed #555;
 }
 
 body {
@@ -51,6 +61,19 @@ body {
     line-height: 20px;
     color: var(--text-color);
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 img {
     max-width: 100%;
@@ -73,4 +96,195 @@ a {
 
 .main-content {
     flex-grow: 1;
+}
+
+/* HEADER */
+.site-header {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 84px; 
+    background-color: var(--header-bg-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controll {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.controller {
+    margin-left: 23px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--header-bg-color);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.controller:hover {
+    background-color: #939BF4;
+}
+
+.control-day,
+.control-night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input-day:checked ~ .controll .control-night,
+.input-night:checked ~ .controll .control-day {
+    z-index: 5;
+}
+
+
+.input-day:checked ~ .controll .controller {
+    transform: translateX(-100%);
+}
+
+.control-day:checked .controller {
+    transform: translateX(-100%);
+}
+
+.label {
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+/* FORM-SEARCH */
+.form-search {
+    position: absolute;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    background-color: var(--color-white);
+    border-radius: 6px;
+}
+
+.search {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: none;
+    border-right: 1px solid #6E8098;
+}
+
+.search-title {
+    position: relative;
+    width: 463px;
+    padding-left: 72px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 32px;
+}
+
+.search-location {
+    position: relative;
+    width: 300px;
+    padding-left: 56px;
+}
+
+.location-icon {
+    position: absolute;
+    left: 487px;
+}
+
+/* CHECKBOX */
+.checkbox {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-full {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(25, 32, 45, 0.1);
+    margin-right: 16px;
+}
+
+.checkbox-full::before {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    border: 3px dashed var(--header-bg-color);
+    content: "";
+    transform: translate(0);
+    opacity: 0;
+}
+
+/* Focus */
+.checkbox-input:focus + .checkbox-full::before {
+    transform: translate(1);
+    opacity: 1;
+}
+
+/* Checked */
+.checkbox-input:checked + .checkbox-full {
+    background-color: var(--header-bg-color);
+    background-image: url(../img/checked.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.button {
+    background-color: var(--header-bg-color);
+    padding: 16px 35px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-white);
+    margin-left: 26px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #939BF4;
+}
+
+.button:active {
+    opacity: 0.6;
 }
