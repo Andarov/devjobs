@@ -213,6 +213,7 @@ a {
     position: relative;
     width: 300px;
     padding-left: 56px;
+    flex-shrink: 10;
 }
 
 .location-icon {
