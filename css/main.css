@@ -1,11 +1,26 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --text-color: #6E8098;
+    --body-bg-color: #f4f6f8;   
 }
 
 /* FONTS */
+@font-face {
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:url("../fonts/kumbh-sans-v10-latin-regular.woff2") format("woff2"),
+         url("../fonts/kumbh-sans-v10-latin-regular.woff") format("woff"); 
+    font-display: swap;
+  }
 
+  @font-face {
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    src:url("../fonts/kumbh-sans-v10-latin-700.woff2") format("woff2"),
+         url("../fonts/kumbh-sans-v10-latin-700.woff") format("woff"); 
+    font-display: swap;
+  }
 
 html {
     height: 100%;
@@ -29,11 +44,11 @@ body {
     flex-direction: column;
     height: 100%;
     background-color: var(--body-bg-color);
-    font-family: var(--font-family);
+    font-family: "Kumbh Sans", "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: var(--text-color);
 }
 
@@ -49,7 +64,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
