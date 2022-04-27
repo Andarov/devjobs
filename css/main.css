@@ -8,6 +8,7 @@
     --checkbox-color: #19202D;
     --focus-color: #5964E0;
     --company-link: rgba(89, 100, 224, 0.1);
+    --company-name: #5964E0; 
 }
 
 .dark-mode {
@@ -19,6 +20,7 @@
     --where-color: #5964E0;
     --checkbox-color: #999;
     --focus-color: #6E8098;
+    --company-name: #fff;
 }
 
 /* FONTS */
@@ -395,7 +397,7 @@ a {
     margin-right: auto;
 }
 
-.company {
+.company-wrapper {
     align-items: center;
     position: relative;
     transform: translateY(-50%);    
@@ -428,5 +430,80 @@ a {
     font-weight: 700;
     padding: 16px 20px;
     background-color: var(--company-link);
-    color: var(--header-bg-color);
+    color: var(--company-name);
+}
+
+/* Apply */
+.apply {
+    background-color: var(--color-white);
+    padding: 48px 43px 48px 48px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    margin-bottom: 11px;
+}
+
+.box-link {
+    margin-bottom: 14px;
+}
+
+.about-button {
+    margin-left: 0;
+    padding: 16px 28px;
+}
+
+/* APPLY-CONTENT */
+.apply-content {
+    line-height: 26px;
+}
+
+.apply-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.reuirment-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--box-link-color);
+    margin-bottom: 28px;
+}
+
+.requierement-text {
+    margin-bottom: 24px;
+}
+
+/* COUNTER */
+.counter-items {
+    counter-reset: list;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.counter-item {
+    width: 600px;
+    white-space: pre-wrap;
+    text-align: initial;
+    counter-increment: list;
+}
+
+.counter-item::before {
+    font-weight: 700;
+    color: var(--company-name);
+    margin-right: 28px;
+    content: counter(list);
 }
