@@ -437,6 +437,7 @@ a {
 .apply {
     background-color: var(--color-white);
     padding: 48px 43px 48px 48px;
+    margin-bottom: 80px;
 }
 
 .about-wrapper {
@@ -474,7 +475,7 @@ a {
     margin-bottom: 40px;
 }
 
-.reuirment-title {
+.requirment-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
@@ -483,7 +484,20 @@ a {
 }
 
 .requierement-text {
+    margin-top: 28px;
     margin-bottom: 24px;
+}
+
+/* LIST */
+.list-items {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    margin-bottom: 48px;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 /* COUNTER */
@@ -495,15 +509,45 @@ a {
 }
 
 .counter-item {
-    width: 600px;
-    white-space: pre-wrap;
-    text-align: initial;
+    position: relative;
     counter-increment: list;
+    padding-left: 28px;
+}
+
+.counter-item:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 .counter-item::before {
+    position: absolute;
+    left: 0;
     font-weight: 700;
-    color: var(--company-name);
-    margin-right: 28px;
+    color: var(--where-color);
     content: counter(list);
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: var(--color-white);
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+.footer-box-link {
+    margin-bottom: 12px;
+}
+.digital {
+}
+.button {
+}
+.about-button {
 }
