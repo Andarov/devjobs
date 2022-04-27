@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devjobs</title>
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="container header">
+            <a class="logo-link" href="index.html">
+                <img src="img/devjobs.svg" alt="logo">
+            </a>
+            <!-- FORM -->
+            <form class="form">
+                <input class="input-day visually-hidden" type="radio" id="day" name="pricing" value="day" checked>
+                <input class="input-night visually-hidden" type="radio" id="night" name="pricing" value="night">
+                <label class="label label-day" for="day">
+                    <img src="img/day.svg" alt="icon">
+                </label>
+                <!-- CONTROLLER -->
+                <div class="controll">
+                    <div class="controller"></div>
+                    <label class="control-day" for="day"></label>
+                    <label class="control-night" for="night"></label>
+                </div>
+                <label class="label label-night" for="night">
+                    <img src="img/night.svg" alt="icon">
+                </label>
+            </form>
+        </div>
+    </header>
+    
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="company-container">
+            <div class="company">
+                <img class="company-icon" src="img/scoot-big.jpg" alt="Scoot icon" width="140" height="140" srcset="img/scoot-big.jpg 1x, img/scoot-big@2x.jpg 2x">
+                <div class="about-company">
+                    <span class="company-name">Scoot</span>
+                    <span class="company-site">scoot.com</span>
+                </div>
+                <a class="company-link" href="#">Company Site</a>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
     --where-color: #5964E0;
     --checkbox-color: #19202D;
     --focus-color: #5964E0;
+    --company-link: rgba(89, 100, 224, 0.1);
 }
 
 .dark-mode {
@@ -384,4 +385,48 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* DETAIL */
+.company-container {
+    width: 100%;
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.company {
+    align-items: center;
+    position: relative;
+    transform: translateY(-50%);    
+    display: flex;
+    background-color: var(--color-white);
+    border-radius: 6px;
+}
+
+.company-icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 0px 0px 0px 6px;
+    margin-right: 40px;
+}
+
+.about-company {
+    display: flex;
+    flex-direction: column;
+    margin-right: 295px;
+}
+.company-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--box-link-color);
+    margin-bottom: 13px;
+}
+
+.company-link {
+    font-weight: 700;
+    padding: 16px 20px;
+    background-color: var(--company-link);
+    color: var(--header-bg-color);
 }
