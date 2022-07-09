@@ -236,6 +236,7 @@ a {
 }
 
 .search {
+    background-color: var(--color-white);
     border: none;
 }
 
