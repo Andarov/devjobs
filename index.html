@@ -42,19 +42,19 @@
         <div class="container">
             <!-- INPUT -->
             <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-
+                
                 <!-- Search -->
                 <div class="search-title-wrapper">
                     <span class="search-icon"></span>
                     <input class="search search-title" type="text" name="company, expert" placeholder="Filter by title, companies, expertise…" required>
                 </div>
-
+                
                 <!-- Filter -->
                 <div class="search-location-wrapper">
                     <span class="search-location-icon"></span>
                     <input class="search search-location" type="text" name="location" placeholder="Filter by location…" required>
                 </div>
-
+                
                 <!-- CHECKBOX -->
                 <div class="checkbox">
                     <label class="checkbox-label" for="full">
@@ -62,159 +62,161 @@
                         <span class="checkbox-full"></span>
                         <span class="full-time">Full Time</span><span class="only">Only</span>
                     </label>
-
-                    <svg class="checkbox-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.108 0H.86a.86.86 0 0 0-.764.455.833.833 0 0 0 .068.884l6.685 9.202.007.01c.242.32.374.708.375 1.107v7.502a.825.825 0 0 0 .248.594c.16.157.378.246.605.246.116 0 .23-.023.337-.066l3.756-1.4c.337-.1.56-.41.56-.784v-6.092c0-.399.132-.787.375-1.108l.007-.009 6.685-9.202c.19-.26.217-.6.068-.884A.86.86 0 0 0 19.108 0Z" fill="currentColor"/></svg>
+                    
+                    <button class="button-filter js-filter">
+                        <svg class="checkbox-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.108 0H.86a.86.86 0 0 0-.764.455.833.833 0 0 0 .068.884l6.685 9.202.007.01c.242.32.374.708.375 1.107v7.502a.825.825 0 0 0 .248.594c.16.157.378.246.605.246.116 0 .23-.023.337-.066l3.756-1.4c.337-.1.56-.41.56-.784v-6.092c0-.399.132-.787.375-1.108l.007-.009 6.685-9.202c.19-.26.217-.6.068-.884A.86.86 0 0 0 19.108 0Z" fill="currentColor"/></svg>
+                    </button>
                 </div>
                 <button class="button" type="submit">
                     <span class="button-text">Search</span>
                     <span class="button-search">
                         <svg class="button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.024 15.0588H17.1123L23.9435 21.9037L21.9037 23.9435L15.0588 17.1123V16.0308L14.6824 15.6544C13.1286 16.9891 11.1093 17.7968 8.89842 17.7968C3.98374 17.7968 0 13.8131 0 8.89842C0 3.98374 3.98381 0 8.89842 0C13.813 0 17.7968 3.98374 17.7968 8.89842C17.7968 11.1093 16.9891 13.1286 15.6475 14.6824L16.024 15.0588ZM2.73799 8.89842C2.73799 12.3003 5.49651 15.0588 8.89842 15.0588C12.3003 15.0588 15.0588 12.3003 15.0588 8.89842C15.0588 5.49651 12.3003 2.73799 8.89842 2.73799C5.49651 2.73799 2.73799 5.49651 2.73799 8.89842Z" fill="currentColor"/>
-                            </svg>
+                        </svg>
                     </span>
                 </button>
             </form>
-
+            
             <ul class="boxes">
-
+                
                 <!-- SCOOT -->
                 <li class="box">
                     <img class="logo-icon" src="img/scoot.jpg" alt="Scoot icon" width="50" height="50" srcset="img/scoot.jpg 1x, img/scoot@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">5h ago</span>
-                            <span class="duration">Full Time</span>
+                        <span class="when">5h ago</span>
+                        <span class="duration">Full Time</span>
                     </div>
                     <a class="box-link" href="detail.html">Senior Software Engineer</a>
                     <span class="company">Scoot</span>
                     <span class="where">United Kingdom</span>
                 </li>
-
+                
                 <!-- BLOGR -->
                 <li class="box">
                     <img class="logo-icon" src="img/blogr.jpg" alt="Blogr icon" width="50" height="50" srcset="img/blogr.jpg 1x, img/blogr@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">20h ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">20h ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Haskell and PureScript Dev</a>
                     <span class="company">Blogr</span>
                     <span class="where">United States</span>
                 </li>
-
+                
                 <!-- VECTOR -->
                 <li class="box">
                     <img class="logo-icon" src="img/vector.jpg" alt="Vector icon" width="50" height="50" srcset="img/vector.jpg 1x, img/vector@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">1d ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">1d ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Midlevel Back End Engineer </a>
                     <span class="company">Vector</span>
                     <span class="where">Russia</span>
                 </li>
-
+                
                 <!-- LITE -->
                 <li class="box">
                     <img class="logo-icon" src="img/lite.jpg" alt="Office lite icon" width="50" height="50" srcset="img/lite.jpg 1x, img/lite@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">2d ago</span>
-                            <span class="duration">Full Time</span>
+                        <span class="when">2d ago</span>
+                        <span class="duration">Full Time</span>
                     </div>
                     <a class="box-link" href="#">Senior Application Engineer</a>
                     <span class="company">Office Lite</span>
                     <span class="where">Japan</span>
                 </li>
-
+                
                 <!-- POD -->
                 <li class="box">
                     <img class="logo-icon" src="img/pod.jpg" alt="Pod icon" width="50" height="50" srcset="img/pod.jpg 1x, img/pod@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">2d ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">2d ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Remote DevOps Engineer</a>
                     <span class="company">Pod</span>
                     <span class="where">Thailand</span>
                 </li>
-
+                
                 <!-- CREATIVE -->
                 <li class="box">
                     <img class="logo-icon" src="img/creative.jpg" alt="Creative icon" width="50" height="50" srcset="img/creative.jpg 1x, img/creative@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">4d ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">4d ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Desktop Support Manager</a>
                     <span class="company">Creative</span>
                     <span class="where">Germany</span>
                 </li>
-
+                
                 <!-- POMODORO -->
                 <li class="box">
                     <img class="logo-icon" src="img/pomodoro.jpg" alt="Pomodoro icon" width="50" height="50" srcset="img/pomodoro.jpg 1x, img/pomodoro@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">1w ago</span>
-                            <span class="duration">Full Time</span>
+                        <span class="when">1w ago</span>
+                        <span class="duration">Full Time</span>
                     </div>
                     <a class="box-link" href="#">iOS Engineer</a>
                     <span class="company">Pomodoro</span>
                     <span class="where">United States</span>
                 </li>
-
+                
                 <!-- MAKER -->
                 <li class="box">
                     <img class="logo-icon" src="img/maker.jpg" alt="Maker icon" width="50" height="50" srcset="img/maker.jpg 1x, img/maker@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">1w ago</span>
-                            <span class="duration">Full Time</span>
+                        <span class="when">1w ago</span>
+                        <span class="duration">Full Time</span>
                     </div>
                     <a class="box-link" href="#">Senior EJB Developer</a>
                     <span class="company">Maker</span>
                     <span class="where">United Kingdom</span>
                 </li>
-
+                
                 <!-- Coffee -->
                 <li class="box">
                     <img class="logo-icon" src="img/coffee.jpg" alt="Cofferoasters icon" width="50" height="50" srcset="img/coffee.jpg 1x, img/coffee@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">1w ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">1w ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Senior Frontend Developer</a>
                     <span class="company">Coffeeroasters</span>
                     <span class="where">Singapore</span>
                 </li>
-
+                
                 <!-- Mastercraft -->
                 <li class="box">
                     <img class="logo-icon" src="img/mastercraft.jpg" alt="Mastercraft icon" width="50" height="50" srcset="img/mastercraft.jpg 1x, img/mastercraft@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">2w ago</span>
-                            <span class="duration">Freelance</span>
+                        <span class="when">2w ago</span>
+                        <span class="duration">Freelance</span>
                     </div>
                     <a class="box-link" href="#">App & Website Designerr</a>
                     <span class="company">Mastercraft</span>
                     <span class="where">United States</span>
                 </li>
-
+                
                 <!-- Crowdfund -->
                 <li class="box">
                     <img class="logo-icon" src="img/crowd.jpg" alt="Crowdfund icon" width="50" height="50" srcset="img/crowd.jpg 1x, img/crowd@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">1mo ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">1mo ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Fullstack Developer</a>
                     <span class="company">Crowdfund</span>
                     <span class="where">New Zealand</span>
                 </li>
-
+                
                 <!-- Typemaster -->
                 <li class="box">
                     <img class="logo-icon" src="img/typemaster.jpg" alt="Typemaster icon" width="50" height="50" srcset="img/typemaster.jpg 1x, img/typemaster@2x.jpg 2x">
                     <div class="time">
-                            <span class="when">4d ago</span>
-                            <span class="duration">Part Time</span>
+                        <span class="when">4d ago</span>
+                        <span class="duration">Part Time</span>
                     </div>
                     <a class="box-link" href="#">Technical Lead Engineer</a>
                     <span class="company">Typemaster</span>
@@ -230,28 +232,32 @@
     
     <div class="modal">
         <div class="modal-wrapper">
-            <button class="modal-exit">
+            <button class="modal-exit js-exit">
                 <svg class="modal-exit-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.857 17.143 0 10 7.143 2.857 0 0 2.857 7.143 10 0 17.143 2.857 20 10 12.857 17.143 20 20 17.143 12.857 10 20 2.857Z" fill="currentColor"/></svg>
             </button>
-
-            <div class="search-location-wrapper modal-location ">
-                <span class="search-location-icon"></span>
-                <input class="search search-location" type="text" name="location" placeholder="Filter by location…" required>
-            </div>
-            <!-- CHECKBOX -->
-            <div class="modal-checkbox">
-                <label class="checkbox-label" for="full">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="full" name="Full time">
-                    <span class="checkbox-full"></span>
-                    <span class="full-time">Full Time Only</span>
-                </label>
-            </div>
-            <button class="modal-button button" type="submit">
-                <span class="button-text">Search</span>
-            </button>
+            
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+                <div class="search-location-wrapper modal-location ">
+                    <span class="search-location-icon"></span>
+                    <input class="search search-location" type="text" name="location" placeholder="Filter by location…" required>
+                </div>
+                <!-- CHECKBOX -->
+                <div class="modal-checkbox">
+                    <label class="checkbox-label" for="full">
+                        <input class="checkbox-input visually-hidden" type="checkbox" id="full" name="Full time">
+                        <span class="checkbox-full"></span>
+                        <span class="full-time">Full Time Only</span>
+                    </label>
+                </div>
+                <div class="modal-button-wrapper">
+                    <button class="modal-button button" type="submit">
+                        <span class="button-text">Search</span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-
+    
     <script src="main.js"></script>
 </body>
 </html>
