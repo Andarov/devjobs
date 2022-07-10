@@ -529,6 +529,8 @@ a {
     max-width: 730px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .company-wrapper {
@@ -550,7 +552,7 @@ a {
 .about-company {
     display: flex;
     flex-direction: column;
-    margin-right: 295px;
+    margin-right: auto;
 }
 .company-name {
     font-weight: 700;
@@ -565,6 +567,7 @@ a {
     padding: 16px 20px;
     background-color: var(--company-link);
     color: var(--company-name);
+    margin-right: 43px;
 }
 
 /* Apply */
@@ -577,8 +580,10 @@ a {
 .about-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 44px;
+    margin-right: 16px;
 }
 
 .about {
@@ -595,7 +600,6 @@ a {
 }
 
 .about-button {
-    margin-left: 0;
     padding: 16px 28px;
 }
 
@@ -767,6 +771,75 @@ a {
 
     .button {
         padding: 16px 35px;
+    }
+}
+
+@media only screen and (max-width: 566px)  {
+    .company-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .company-link {
+        margin-right: 16px;
+    }
+
+    .about {
+        margin-bottom: 16px;
+    }
+
+    .button-full {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .site-header {
+        border-radius: 0;
+    }
+
+    .company-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-20px);
+    }
+
+    .company-icon {
+        position: relative;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        margin-right: 0;
+    }
+
+    .about-company {
+        margin-right: 0;
+        margin-bottom: 27px;
+    }
+
+    .company-link {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .apply {
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    .about-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
