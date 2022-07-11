@@ -389,7 +389,7 @@ a {
     max-width: 327px;
     margin: 225px auto;
     background-color: var(--color-white);
-    padding-bottom: 24px;
+    padding: 24px;
 }
 
 .modal-exit {
@@ -420,6 +420,10 @@ a {
     width: 100%;
     max-width: 327px;
     padding: 24px 0;
+}
+
+.modal-label {
+    display: block;
 }
 
 .modal-button-wrapper {
@@ -756,12 +760,20 @@ a {
         display: none;
     }
 
+    .modal-location {
+        display: flex;
+    }
+
     .checkbox {
         justify-content: center;
     }
 
     .checkbox-label {
         display: none;
+    }
+
+    .modal-label {
+        display: flex;
     }
 
     .checkbox-icon {
