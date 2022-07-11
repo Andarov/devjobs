@@ -863,4 +863,8 @@ a {
     .button {
         padding: 16px 14px;
     }
+
+    .modal-wrapper {
+        margin: 120px auto;
+    }
 }
